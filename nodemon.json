@@ -1,0 +1,11 @@
+{
+  "verbose": false,
+  "debug": false,
+  "watch": ["server"],
+  "ext": "js,pug,json",
+  "exec": "node ./server/bin/www",
+  "ignore": ["**/node_modules/**", "**/dist/**", "**/.git/**"],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

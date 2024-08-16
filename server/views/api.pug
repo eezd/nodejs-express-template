@@ -1,0 +1,9 @@
+extends layout
+include mixin
+
+block content
+  div
+    h1= title
+    p Welcome to #{title}
+
+  //- +pagination(pagination_href, active_page, total_length)

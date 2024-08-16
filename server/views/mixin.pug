@@ -1,0 +1,10 @@
+mixin pagination(pagination_href, active_page, total_length)
+  div.pagination
+    p #{total_length} 总页数 
+    - let page = 1
+    while page<=total_length
+      if active_page == page
+        a.page_link.active_page(href=`${pagination_href}?p=${page}`) #{page}
+      else 
+        a.page_link(href=`${pagination_href}${page}`) #{page}
+      - page = page + 1
